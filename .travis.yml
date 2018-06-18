@@ -16,7 +16,6 @@
  services:
   - couchdb
 
- # command to install dependencies
  install:
  - npm install -g chai --save-dev
  - npm install -g mocha --save-dev
@@ -25,8 +24,7 @@
 
 
 
- # command to run tests
- script:
+a script:
    - node couchdb.js
    - mocha
 
