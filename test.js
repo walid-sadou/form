@@ -5,17 +5,15 @@ var nano = require('nano')('http://localhost:5984' );
 var testdb = nano.use('testdb');
 
 describe('couchdbtest', function() {
-   it('should find good db', function (err, body) {
+   it('should find good db', function (done) {
        nano.db.get('testdb', function (err, body) {
-           should.equal(body,'{ ok: true }');
+           should.equal(body.db_name,'testdb');
            done();
        })
     });
-   it('should find good doc', function() {
+   it('should find good doc', function(done) {
        testdb.get('myid', function(err, body) {
-           should.equal(body, '\'{ ok: true,\\n\' +\n' +
-               '           \'  id: \\\'myid\\\',\\n\' +\n' +
-               '           \'  rev: \\\'1-6e4cb465d49c0368ac3946506d26335d\\\' }\'');
+          should.equal(body._id,'myid');
            done();
        });
    })
