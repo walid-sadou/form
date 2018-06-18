@@ -1,5 +1,4 @@
 'use strict';
-
 var chai = require("chai");
 var should = chai.should();
 var nano = require('nano')('http://localhost:5984' );
