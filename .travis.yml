@@ -19,9 +19,9 @@
  # command to install dependencies
  install:
  - npm install -g require --save-dev
- - npm install -g chai
- - npm install -g mocha
- - npm install -g nano
+ - npm install -g chai --save-dev
+ - npm install -g mocha --save-dev
+ - npm install -g nano --save-dev
 
 
 
