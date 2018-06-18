@@ -22,9 +22,7 @@
  - npm install -g nano --save-dev
  - npm install
 
-
-
-script:
-   - node couchdb.js
-   - mocha
+ script:
+ - node couchdb.js
+ - mocha
 
