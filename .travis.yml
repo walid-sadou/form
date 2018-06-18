@@ -1,6 +1,7 @@
  language: node_js
  node_js:
    - "8.11.1"
+ os: osx
  env:
    - CXX=g++-4.8
  addons:
@@ -21,8 +22,6 @@
  - npm install -g nano --save-dev
  - npm install
 
-before_install:
- - mocha --version
 
 
 script:
