@@ -1,0 +1,25 @@
+{
+  "name": "form",
+  "version": "0.1.0",
+  "description": "",
+  "main": "docker-compose up",
+  "os": [
+    "darwin",
+    "linux"
+  ],
+  "scripts": {
+    "test": " ./node_modules/mocha/bin/mocha --exit -R nyan -r  ./test.js"
+
+  },
+
+  "keywords": [
+    "hyperledger",
+    "fabric",
+    "nodejs",
+    "angular",
+    "typescript",
+    "blockchain"
+  ],
+  "author": "IBM",
+  "dependencies": {}
+}
