@@ -3,7 +3,7 @@ var testdb = nano.use('testdb')
 
 nano.db.create('testdb', function(err, body) {
     if (!err) {
-        console.log('database test created!');
+        console.log(body);
     }
 });
 
