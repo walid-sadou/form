@@ -5,6 +5,12 @@ var nano = require('nano')('http://localhost:5984' );
 var testdb = nano.use('testdb');
 
 describe('couchdbtest', function() {
+   it('should find good db', function (err, body) {
+       nano.db.get('testdb', function (err, body) {
+           should.equal(body,'{ ok: true }');
+           done();
+       })
+    });
    it('should find good doc', function() {
        testdb.get('myid', function(err, body) {
            should.equal(body, '\'{ ok: true,\\n\' +\n' +
