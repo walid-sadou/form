@@ -10,5 +10,6 @@ nano.db.create('testdb', function(err, body) {
 
 testdb.insert({ _id: 'myid', crazy: true }, function(err, body) {
     if (!err)
+        
         console.log(body)
 })
