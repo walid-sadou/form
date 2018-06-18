@@ -9,17 +9,15 @@
   ],
   "scripts": {
     "test": " ./node_modules/mocha/bin/mocha --exit -R nyan -r  ./test.js"
-
   },
-
-  "keywords": [
-    "hyperledger",
-    "fabric",
-    "nodejs",
-    "angular",
-    "typescript",
-    "blockchain"
-  ],
-  "author": "IBM",
-  "dependencies": {}
+  "dependencies": {
+    "nano": "^6.4.4",
+    "mocha": "~5.2.0",
+    "chai": "^4.1.2"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "~5.2.0",
+    "nano": "^6.4.4"
+  }
 }
