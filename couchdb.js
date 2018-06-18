@@ -1,5 +1,5 @@
 var nano = require('nano')('http://localhost:5984' );
-var testdb = nano.use('testdb2')
+var testdb = nano.use('testdb')
 
 nano.db.create('testdb', function(err, body) {
     if (!err) {
