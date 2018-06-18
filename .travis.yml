@@ -21,6 +21,8 @@
  - npm install -g nano --save-dev
  - npm install
 
+before_install:
+ - mocha --version
 
 
 script:
