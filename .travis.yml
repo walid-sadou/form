@@ -24,7 +24,7 @@
 
 
 
-a script:
-   - node couchdb.js &
+script:
+   - node couchdb.js
    - mocha
 
