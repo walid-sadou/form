@@ -13,6 +13,8 @@
 
  sudo: required
 
+ services:
+  - couchdb
 
  # command to install dependencies
  install:
@@ -20,7 +22,6 @@
  - npm install -g mocha --save-dev
  - npm install -g nano --save-dev
  - npm install
- - brew install couchdb
 
 
 
