@@ -19,6 +19,7 @@
  - npm install -g chai --save-dev
  - npm install -g mocha --save-dev
  - npm install -g nano --save-dev
+ - npm install
 
 
 
